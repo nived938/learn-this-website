@@ -1,72 +1,415 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f6f0">
-  <meta name="description" content="Meet Luma, a friendly corner of the internet built around curiosity, creativity, and learning at your own pace.">
-  <title>Our story · Luma</title>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23d9fc70'/%3E%3Cpath d='M17 32 27 42 48 21' fill='none' stroke='%23171b24' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"></head>
-<body class="page-about">
-<a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header"><div class="container nav-wrap">
-    <a class="brand" href="index.html" aria-label="Luma home"><span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M8 20.5 16.1 28 32 11.5" /></svg></span><span>Luma<span class="brand-period">.</span></span></a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="index.html">Explore</a><a href="about.html" aria-current="page">Our story</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
-    </nav>
-    <div class="nav-actions"><a class="nav-login" href="login.html">Log in</a><a class="button button-dark button-small" href="signup.html">Start learning <span aria-hidden="true">↗</span></a></div>
-    <details class="mobile-menu"><summary aria-label="Open navigation menu"><span></span><span></span></summary><nav aria-label="Mobile navigation"><a href="index.html">Explore</a><a href="about.html">Our story</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a><a href="login.html">Log in</a><a href="signup.html">Start learning ↗</a></nav></details>
-  </div></header>
-<main id="main">
-  <section class="container about-hero">
-    <div class="about-hero-copy">
-      <div class="eyebrow"><span class="eyebrow-spark">✳</span> A small idea with room to grow</div>
-      <h1>We think curiosity is a <span class="marker-text">superpower.</span></h1>
-      <p>Luma started with a simple thought: learning should feel less like another task on the list and more like following a trail of things you love. A place for the questions, the experiments, and the “wait, that's interesting” moments.</p>
-      <a class="button button-dark" href="gallery.html">See what inspires us <span class="button-arrow" aria-hidden="true">↗</span></a>
-    </div>
-    <div class="about-image-wrap"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85" alt="A small group sharing ideas and working together" fetchpriority="high"><span class="about-photo-label">A place to begin, not to finish ✳</span></div>
-  </section>
-
-  <section class="container section" style="padding-top:0">
-    <div class="stats-strip scroll-reveal"><div class="stat-item"><strong>01</strong><span>Start with one small spark</span></div><div class="stat-item"><strong>∞</strong><span>Ways to explore an idea</span></div><div class="stat-item"><strong>You</strong><span>Set your own pace</span></div></div>
-  </section>
-
-  <section class="section container">
-    <div class="story-layout scroll-reveal">
-      <div><div class="eyebrow"><span class="eyebrow-spark">✳</span> Why we're here</div><h2>Learning isn't a straight line. <span class="marker-text">Good.</span></h2></div>
-      <div class="story-copy">
-        <p>Sometimes a sketch turns into a new hobby. A question about light becomes a love of photography. A five-minute video opens up an entirely new subject. The most useful learning often starts in an unexpected place, and we wanted to make more room for those moments.</p>
-        <p>Luma is a concept space for collecting inspiration, discovering useful starting points, and reminding ourselves that being a beginner is a perfectly good place to be. We value making over perfection, questions over assumptions, and sharing what we discover along the way.</p>
-        <div class="story-pullquote">“You don't need a five-year plan to follow a five-minute curiosity.”</div>
-        <p>This little website is the beginning. Explore the gallery, save an idea in your notebook, talk to us about what you are learning, and come back when the next question finds you.</p>
-        <a class="text-link" href="contact.html">Tell us what you're exploring <span aria-hidden="true">→</span></a>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f6f0">
+    <meta name="description" content="Meet Luma, a friendly corner of the internet built around curiosity, creativity, and learning at your own pace.">
+    <title>
+      Our story · Luma
+    </title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='20' fill='%23d9fc70'/%3E%3Cpath d='M17 32 27 42 48 21' fill='none' stroke='%23171b24' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="page-about">
+    <a class="skip-link" href="#main">
+    Skip to content
+    </a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Luma home">
+        <span class="brand-symbol" aria-hidden="true">
+        <svg viewBox="0 0 40 40">
+          <path d="M8 20.5 16.1 28 32 11.5" />
+        </svg>
+        </span>
+        <span>
+        Luma
+        <span class="brand-period">
+        .
+        </span>
+        </span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">
+          Explore
+          </a>
+          <a href="about.html" aria-current="page">
+          Our story
+          </a>
+          <a href="gallery.html">
+          Gallery
+          </a>
+          <a href="contact.html">
+          Contact
+          </a>
+        </nav>
+        <div class="nav-actions">
+          <a class="nav-login" href="login.html">
+          Log in
+          </a>
+          <a class="button button-dark button-small" href="signup.html">
+          Start learning
+          <span aria-hidden="true">
+          ↗
+          </span>
+          </a>
+        </div>
+        <details class="mobile-menu">
+          <summary aria-label="Open navigation menu">
+            <span>
+            </span>
+            <span>
+            </span>
+          </summary>
+          <nav aria-label="Mobile navigation">
+            <a href="index.html">
+            Explore
+            </a>
+            <a href="about.html">
+            Our story
+            </a>
+            <a href="gallery.html">
+            Gallery
+            </a>
+            <a href="contact.html">
+            Contact
+            </a>
+            <a href="login.html">
+            Log in
+            </a>
+            <a href="signup.html">
+            Start learning ↗
+            </a>
+          </nav>
+        </details>
       </div>
-    </div>
-  </section>
-
-  <section class="section container" style="padding-top:25px">
-    <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-spark">✳</span> What matters here</div><h2>Three things we <span class="marker-text">believe in.</span></h2></div></div>
-    <div class="values-grid">
-      <article class="value-card scroll-reveal"><span class="value-icon">✳</span><h3>Stay curious</h3><p>Ask the extra question. Follow the side quest. Let a small interest surprise you.</p></article>
-      <article class="value-card scroll-reveal"><span class="value-icon">↗</span><h3>Make it real</h3><p>Try the idea, make the rough draft, and learn by doing instead of waiting to be ready.</p></article>
-      <article class="value-card scroll-reveal"><span class="value-icon">♡</span><h3>Grow together</h3><p>Share what you learn, be generous with encouragement, and leave room for different perspectives.</p></article>
-    </div>
-  </section>
-
-  <section class="section container" style="padding-top:15px">
-    <div class="section-heading"><div><div class="eyebrow"><span class="eyebrow-spark">✳</span> The moodboard</div><h2>A few things that make us <span class="marker-text">feel alive.</span></h2></div><a class="text-link heading-link" href="gallery.html">See the gallery <span aria-hidden="true">↗</span></a></div>
-    <div class="mini-gallery"><a href="gallery.html#visual-stories" class="mini-tile mini-tile-tall"><img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=850&q=85" alt="A colorful artist studio" loading="lazy"><span>Color outside lines <b>↗</b></span></a><a href="gallery.html#little-lessons" class="mini-tile"><img src="https://images.unsplash.com/photo-1455390582262-044c005cc2df?auto=format&fit=crop&w=700&q=85" alt="An open notebook" loading="lazy"><span>Write it down <b>↗</b></span></a><a href="gallery.html#make-something" class="mini-tile"><img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=85" alt="A quiet corner filled with ideas" loading="lazy"><span>Find your rhythm <b>↗</b></span></a></div>
-  </section>
-  <section class="container cta-section"><div class="cta-panel"><div class="cta-content"><div class="eyebrow eyebrow-light">Come as you are</div><h2>Bring your <em>curiosity.</em></h2><p>There is no level to reach before you belong here. Start wherever you are, and see what you find.</p><a class="button button-lime" href="signup.html">Explore with Luma <span class="button-arrow" aria-hidden="true">↗</span></a></div><div class="cta-art" aria-hidden="true"><div class="cta-ring"></div><div class="cta-orb">L<span>✳</span></div><span class="cta-spark cta-spark-one">✦</span><span class="cta-spark cta-spark-two">✳</span></div></div></section>
-</main>
-<footer class="site-footer"><div class="container footer-top">
-    <div class="footer-brand-block"><a class="brand brand-footer" href="index.html"><span class="brand-symbol" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M8 20.5 16.1 28 32 11.5" /></svg></span><span>Luma<span class="brand-period">.</span></span></a><p>A little corner of the internet<br>for big, curious minds.</p></div>
-    <div class="footer-links"><div><strong>Discover</strong><a href="index.html">Explore</a><a href="gallery.html">Gallery</a><a href="about.html">Our story</a></div><div><strong>Say hello</strong><a href="contact.html">Contact</a><a href="login.html">Log in</a><a href="signup.html">Join Luma</a></div></div>
-    <div class="footer-note"><span class="footer-flower">✳</span><p>Stay curious.<br>Stay a little wonderstruck.</p><a href="contact.html" class="footer-email">Send us a note ↗</a></div>
-  </div><div class="container footer-bottom"><span>© 2026 Luma. Made for the joy of learning.</span><span>Designed with curiosity <span class="heart">♥</span></span></div></footer>
-</body>
+    </header>
+    <main id="main">
+      <section class="container about-hero">
+        <div class="about-hero-copy">
+          <div class="eyebrow">
+            <span class="eyebrow-spark">
+            ✳
+            </span>
+            A small idea with room to grow
+          </div>
+          <h1>
+            We think curiosity is a
+            <span class="marker-text">
+            superpower.
+            </span>
+          </h1>
+          <p>
+            Luma started with a simple thought: learning should feel less like another task on the list and more like following a trail of things you love. A place for the questions, the experiments, and the “wait, that's interesting” moments.
+          </p>
+          <a class="button button-dark" href="gallery.html">
+          See what inspires us
+          <span class="button-arrow" aria-hidden="true">
+          ↗
+          </span>
+          </a>
+        </div>
+        <div class="about-image-wrap">
+          <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85" alt="A small group sharing ideas and working together" fetchpriority="high">
+          <span class="about-photo-label">
+          A place to begin, not to finish ✳
+          </span>
+        </div>
+      </section>
+      <section class="container section" style="padding-top:0">
+        <div class="stats-strip scroll-reveal">
+          <div class="stat-item">
+            <strong>
+            01
+            </strong>
+            <span>
+            Start with one small spark
+            </span>
+          </div>
+          <div class="stat-item">
+            <strong>
+            ∞
+            </strong>
+            <span>
+            Ways to explore an idea
+            </span>
+          </div>
+          <div class="stat-item">
+            <strong>
+            You
+            </strong>
+            <span>
+            Set your own pace
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="section container">
+        <div class="story-layout scroll-reveal">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-spark">
+              ✳
+              </span>
+              Why we're here
+            </div>
+            <h2>
+              Learning isn't a straight line.
+              <span class="marker-text">
+              Good.
+              </span>
+            </h2>
+          </div>
+          <div class="story-copy">
+            <p>
+              Sometimes a sketch turns into a new hobby. A question about light becomes a love of photography. A five-minute video opens up an entirely new subject. The most useful learning often starts in an unexpected place, and we wanted to make more room for those moments.
+            </p>
+            <p>
+              Luma is a concept space for collecting inspiration, discovering useful starting points, and reminding ourselves that being a beginner is a perfectly good place to be. We value making over perfection, questions over assumptions, and sharing what we discover along the way.
+            </p>
+            <div class="story-pullquote">
+              “You don't need a five-year plan to follow a five-minute curiosity.”
+            </div>
+            <p>
+              This little website is the beginning. Explore the gallery, save an idea in your notebook, talk to us about what you are learning, and come back when the next question finds you.
+            </p>
+            <a class="text-link" href="contact.html">
+            Tell us what you're exploring
+            <span aria-hidden="true">
+            →
+            </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="section container" style="padding-top:25px">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-spark">
+              ✳
+              </span>
+              What matters here
+            </div>
+            <h2>
+              Three things we
+              <span class="marker-text">
+              believe in.
+              </span>
+            </h2>
+          </div>
+        </div>
+        <div class="values-grid">
+          <article class="value-card scroll-reveal">
+            <span class="value-icon">
+            ✳
+            </span>
+            <h3>
+              Stay curious
+            </h3>
+            <p>
+              Ask the extra question. Follow the side quest. Let a small interest surprise you.
+            </p>
+          </article>
+          <article class="value-card scroll-reveal">
+            <span class="value-icon">
+            ↗
+            </span>
+            <h3>
+              Make it real
+            </h3>
+            <p>
+              Try the idea, make the rough draft, and learn by doing instead of waiting to be ready.
+            </p>
+          </article>
+          <article class="value-card scroll-reveal">
+            <span class="value-icon">
+            ♡
+            </span>
+            <h3>
+              Grow together
+            </h3>
+            <p>
+              Share what you learn, be generous with encouragement, and leave room for different perspectives.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section container" style="padding-top:15px">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">
+              <span class="eyebrow-spark">
+              ✳
+              </span>
+              The moodboard
+            </div>
+            <h2>
+              A few things that make us
+              <span class="marker-text">
+              feel alive.
+              </span>
+            </h2>
+          </div>
+          <a class="text-link heading-link" href="gallery.html">
+          See the gallery
+          <span aria-hidden="true">
+          ↗
+          </span>
+          </a>
+        </div>
+        <div class="mini-gallery">
+          <a href="gallery.html#visual-stories" class="mini-tile mini-tile-tall">
+          <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=850&q=85" alt="A colorful artist studio" loading="lazy">
+          <span>
+          Color outside lines
+          <b>
+          ↗
+          </b>
+          </span>
+          </a>
+          <a href="gallery.html#little-lessons" class="mini-tile">
+          <img src="https://images.unsplash.com/photo-1455390582262-044c005cc2df?auto=format&fit=crop&w=700&q=85" alt="An open notebook" loading="lazy">
+          <span>
+          Write it down
+          <b>
+          ↗
+          </b>
+          </span>
+          </a>
+          <a href="gallery.html#make-something" class="mini-tile">
+          <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=700&q=85" alt="A quiet corner filled with ideas" loading="lazy">
+          <span>
+          Find your rhythm
+          <b>
+          ↗
+          </b>
+          </span>
+          </a>
+        </div>
+      </section>
+      <section class="container cta-section">
+        <div class="cta-panel">
+          <div class="cta-content">
+            <div class="eyebrow eyebrow-light">
+              Come as you are
+            </div>
+            <h2>
+              Bring your
+              <em>
+              curiosity.
+              </em>
+            </h2>
+            <p>
+              There is no level to reach before you belong here. Start wherever you are, and see what you find.
+            </p>
+            <a class="button button-lime" href="signup.html">
+            Explore with Luma
+            <span class="button-arrow" aria-hidden="true">
+            ↗
+            </span>
+            </a>
+          </div>
+          <div class="cta-art" aria-hidden="true">
+            <div class="cta-ring">
+            </div>
+            <div class="cta-orb">
+              L
+              <span>
+              ✳
+              </span>
+            </div>
+            <span class="cta-spark cta-spark-one">
+            ✦
+            </span>
+            <span class="cta-spark cta-spark-two">
+            ✳
+            </span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-brand-block">
+          <a class="brand brand-footer" href="index.html">
+          <span class="brand-symbol" aria-hidden="true">
+          <svg viewBox="0 0 40 40">
+            <path d="M8 20.5 16.1 28 32 11.5" />
+          </svg>
+          </span>
+          <span>
+          Luma
+          <span class="brand-period">
+          .
+          </span>
+          </span>
+          </a>
+          <p>
+            A little corner of the internet
+            <br>
+            for big, curious minds.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <strong>
+            Discover
+            </strong>
+            <a href="index.html">
+            Explore
+            </a>
+            <a href="gallery.html">
+            Gallery
+            </a>
+            <a href="about.html">
+            Our story
+            </a>
+          </div>
+          <div>
+            <strong>
+            Say hello
+            </strong>
+            <a href="contact.html">
+            Contact
+            </a>
+            <a href="login.html">
+            Log in
+            </a>
+            <a href="signup.html">
+            Join Luma
+            </a>
+          </div>
+        </div>
+        <div class="footer-note">
+          <span class="footer-flower">
+          ✳
+          </span>
+          <p>
+            Stay curious.
+            <br>
+            Stay a little wonderstruck.
+          </p>
+          <a href="contact.html" class="footer-email">
+          Send us a note ↗
+          </a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>
+        © 2026 Luma. Made for the joy of learning.
+        </span>
+        <span>
+        Designed with curiosity
+        <span class="heart">
+        ♥
+        </span>
+        </span>
+      </div>
+    </footer>
+  </body>
 </html>
